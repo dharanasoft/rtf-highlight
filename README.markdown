@@ -4,8 +4,6 @@ This plugin is is basically a wraper around [highlight](http://www.andre-simon.d
 
 To highlight a file, simply use
 
-    ```
     :RTFHighlight <lang>
-    ```
 
 It also works on visual selections.
