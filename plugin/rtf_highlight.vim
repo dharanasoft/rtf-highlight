@@ -14,7 +14,7 @@
 
 " setup a few variables
 if !exists('g:rtfh_theme')
-  let g:rtfh_theme = 'bipolar'
+  let g:rtfh_theme = 'neon'
 end
 if !exists('g:rtfh_font')
   let g:rtfh_font = 'Menlo'
