@@ -29,9 +29,10 @@ function! RTFHighlight(line1,line2,...)
     echoerr "Bummer! highlight not found."
     return
   endif
-  
+
   let content = join(getline(a:line1,a:line2),"\n")
-  let command = "highlight --syntax " . a:1 . " -s " . g:rtfh_theme . " -R -k " . g:rtfh_font . " -K " . g:rtfh_size . " 2> /dev/null"
+  let command = "echo `highlight -O rtf --syntax " . a:1 . " -s " .  g:rtfh_theme . " -k " . g:rtfh_font . " -K " . g:rtfh_size . " 2> /dev/null`"
+
   let output = system(command,content)
   " let @* = output
   " for some reason text copied this way
